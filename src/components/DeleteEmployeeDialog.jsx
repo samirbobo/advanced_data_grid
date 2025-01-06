@@ -53,6 +53,12 @@ export default function DeleteEmployeeDialog({
         onClose={handleClose}
         aria-labelledby="customized-dialog-title"
         open={open}
+        sx={{
+          "& .MuiPaper-root": {
+            width: "90vw",
+            maxWidth: 500,
+          },
+        }}
       >
         <DialogTitle
           sx={{
@@ -79,7 +85,7 @@ export default function DeleteEmployeeDialog({
           <CloseIcon />
         </IconButton>
 
-        <Box sx={{ width: "90vw", maxWidth: 500, px: 2, py: 1 }}>
+        <Box sx={{ px: 2, py: 1 }}>
           <Typography
             variant="body1"
             sx={{ color: theme.palette.error.main, textAlign: "center", mb: 2 }}
